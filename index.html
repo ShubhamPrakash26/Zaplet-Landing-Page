@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapLet Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/zaplet.png" alt="ZapLet ai Logo">&nbsp;
+                    <h2 style="display: inline; margin-left: 10px; margin-top: -10px;">Zaplet</h2>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Ask Zaply</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><button class="discover-btn">Discover!</button></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Hi, This is <span class="highlight">Zaplet</span> your property finder in London</h1>
+                <form class="search-form" id="search-form">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <select id="location-input">
+                            <option value="Hyde Park">Hyde Park</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Preferred Budget</label>
+                        <select id="budget-input">
+                            <option value="£1000 - £2000">£1000 - £2000</option>
+                            <option value="£2000 - £3000">£2000 - £3000</option>
+                            <option value="£3000 - £4000">£3000 - £4000</option>
+                            <option value="£4000 - £5000">£4000 - £5000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="movein-date">Date to Move In</label>
+                        <input type="date" id="date-input" value="2024-09-08">
+                    </div>
+                    <div class="form-group">
+                        <label for="individuals">No. of Individuals Living In</label>
+                        <select id="individuals-input">
+                            <option value="1 Adult">1 Adult</option>
+                            <option value="2 Adults">2 Adults</option>
+                            <option value="3 Adults">3 Adults</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn" id="search-button">Search</button>
+                </form>                
+            </div>
+        </div>
+    </header>
+    <section class="suggestions">
+        <div class="suggestion-item">
+            <h3>Suggestion</h3>
+            <p class="suggesion-text">I want to live near my friends. Show me homes for both of us in the same neighborhood.</p>
+            <a href="#" class="suggestion-btn">I'm feeling lucky!</a>
+        </div>
+        <div class="suggestion-item">
+            <h3>Suggestion</h3>
+            <p class="suggesion-text">I'm a gym enthusiast, so find me properties with easy access to fitness facilities.</p>
+            <a href="#" class="suggestion-btn">Discover Now!</a>
+        </div>
+        <div class="suggestion-item">
+            <h3>Looking for rentals</h3>
+            <p class="suggesion-text">List rental properties along with details on recent riots in the area.</p>
+            <a href="#" class="suggestion-btn">Search Now!</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-chat">
+            <div class="chat-icon-bg">
+                <img src="assets/chat-icon.png" alt="Chat Icon" class="chat-icon">
+            </div>
+            <span class="chat-text">Ask Zaplet</span>
+        </div>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
